@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanz Validator — LUXA (luxa-1) Validator</title>
+<meta name="description" content="Sanz Validator is an independent validator on the LUXA network (luxa-1). Secure, transparent, community-first validation.">
+<style>
+  :root { --bg:#0a0f1e; --bg2:#101a30; --card:#14213d; --line:#22345c; --txt:#e8eefc; --mut:#9fb0d0; --acc:#2dd4ff; --acc2:#7c6cff; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background:var(--bg); color:var(--txt); line-height:1.6; }
+  a { color:var(--acc); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .wrap { max-width:960px; margin:0 auto; padding:0 20px; }
+  header { padding:64px 0 40px; text-align:center; background: radial-gradient(ellipse 80% 60% at 50% -10%, #1b2f5e 0%, var(--bg) 70%); }
+  .logo { width:84px; height:84px; margin:0 auto 20px; border-radius:50%; background:linear-gradient(135deg, var(--acc), var(--acc2)); display:flex; align-items:center; justify-content:center; font-size:44px; font-weight:800; color:#06101f; }
+  h1 { font-size:42px; letter-spacing:-1px; }
+  .sub { color:var(--mut); font-size:19px; margin-top:8px; }
+  .badge { display:inline-block; margin-top:18px; padding:6px 14px; border:1px solid var(--line); border-radius:999px; color:var(--acc); font-size:14px; background:rgba(45,212,255,.08); }
+  section { padding:44px 0; }
+  h2 { font-size:26px; margin-bottom:16px; letter-spacing:-.5px; }
+  p { color:#cdd8ef; margin-bottom:12px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; margin-top:8px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:20px; }
+  .card h3 { font-size:16px; color:var(--acc); margin-bottom:8px; }
+  .card p { font-size:15px; margin:0; }
+  .kv { display:grid; grid-template-columns:190px 1fr; gap:10px 16px; background:var(--bg2); border:1px solid var(--line); border-radius:14px; padding:22px; font-size:15px; }
+  .kv dt { color:var(--mut); }
+  .kv dd { word-break:break-all; font-family:ui-monospace, SFMono-Regular, Menlo, monospace; font-size:14px; }
+  .kv dd .plain { font-family:inherit; }
+  .copy { font-size:12px; border:1px solid var(--line); background:transparent; color:var(--acc); border-radius:6px; padding:2px 8px; cursor:pointer; margin-left:8px; vertical-align:middle; }
+  .copy:hover { background:rgba(45,212,255,.12); }
+  .steps { counter-reset:step; list-style:none; }
+  .steps li { counter-increment:step; margin-bottom:14px; padding-left:44px; position:relative; color:#cdd8ef; }
+  .steps li::before { content:counter(step); position:absolute; left:0; top:0; width:28px; height:28px; border-radius:50%; background:var(--acc); color:#06101f; font-weight:700; display:flex; align-items:center; justify-content:center; font-size:14px; }
+  .cta { text-align:center; background:var(--bg2); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .btn { display:inline-block; margin-top:14px; padding:12px 28px; border-radius:999px; background:linear-gradient(135deg, var(--acc), var(--acc2)); color:#06101f; font-weight:700; font-size:16px; }
+  .btn:hover { text-decoration:none; opacity:.92; }
+  footer { text-align:center; color:var(--mut); font-size:14px; padding:28px 0 40px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="logo">L</div>
+    <h1>Sanz Validator</h1>
+    <p class="sub">Independent validator on the LUXA network (luxa-1)</p>
+    <span class="badge">● Application under review — verification in progress</span>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>About the validator</h2>
+    <p>Sanz Validator is an independent validator operated by Sanz (<a href="https://t.me/Sanz2p" target="_blank" rel="noopener">@Sanz2p</a>) on the LUXA blockchain (chain-id <b>luxa-1</b>). The validator runs the official <b>luxad</b> node software and is operated directly by its owner — keys are held by the operator, never by a third party.</p>
+    <p>Our goal is simple: help secure the LUXA network with honest, transparent validation, and share in its growth with the community that delegates to us.</p>
+    <div class="grid">
+      <div class="card"><h3>Security first</h3><p>Validator keys are held by the operator only. No custodial setup, no shared secrets.</p></div>
+      <div class="card"><h3>Transparent</h3><p>Validator address, consensus key and node software are published openly on this page.</p></div>
+      <div class="card"><h3>Community-driven</h3><p>Built by a community member, for the community — questions and delegations are welcome any time.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Validator details</h2>
+    <dl class="kv">
+      <dt>Network</dt><dd><span class="plain">LUXA — luxa-1</span></dd>
+      <dt>Validator</dt><dd><span class="plain">Sanz-Validator</span></dd>
+      <dt>Validator address</dt><dd>luxa1nyhehxj7m0hvvpldqzlfftpx395zqrhy7a52df <button class="copy" onclick="copyText('luxa1nyhehxj7m0hvvpldqzlfftpx395zqrhy7a52df', this)">Copy</button></dd>
+      <dt>Consensus public key</dt><dd>+FzZg5YmVDz55RTgSJRALeKQ1tvn+ag1KWinCguju4w= <button class="copy" onclick="copyText('+FzZg5YmVDz55RTgSJRALeKQ1tvn+ag1KWinCguju4w=', this)">Copy</button></dd>
+      <dt>Node software</dt><dd><span class="plain">luxad v1.0.0</span></dd>
+      <dt>Commission</dt><dd><span class="plain">To be announced at launch</span></dd>
+      <dt>Status</dt><dd><span class="plain">Application submitted — verification in progress with the LUXA team</span></dd>
+    </dl>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>How to delegate</h2>
+    <ol class="steps">
+      <li>Hold LUXA on the luxa-1 network in a wallet you control.</li>
+      <li>Find <b>Sanz-Validator</b> (luxa1nyhe…52df) in your wallet's staking / delegation list, or delegate directly to the address above.</li>
+      <li>Your stake stays in your control — delegation never moves your tokens to the validator.</li>
+      <li>Rewards accrue per the network's rules. Commission will be published here before launch.</li>
+    </ol>
+    <p style="margin-top:16px;">Questions about delegating? Message us on Telegram — we answer personally.</p>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Get in touch</h2>
+    <p>For delegation questions, partnerships, or support:</p>
+    <a class="btn" href="https://t.me/Sanz2p" target="_blank" rel="noopener">Message @Sanz2p on Telegram</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Sanz Validator — LUXA (luxa-1) · Operated by @Sanz2p · Build. Connect. Grow.
+  </div>
+</footer>
+
+<script>
+function copyText(t, btn) {
+  navigator.clipboard.writeText(t).then(function(){ btn.textContent = 'Copied'; setTimeout(function(){ btn.textContent = 'Copy'; }, 1500); });
+}
+</script>
+</body>
+</html>
